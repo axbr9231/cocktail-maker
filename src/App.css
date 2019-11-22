@@ -7,16 +7,25 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  background-image: url('./abstract-antique-backdrop-background-168447.jpg')
+  
 }
 
 .App-link {
   color: #09d3ac;
 }
+
+body {
+  background-image: url('./abstract-antique-backdrop-background-168447.jpg')
+}
+
+.card {
+  width: 18rem;
+  background: black;
+}
+
+.card-body {
+  color: whitesmoke
+}
+
