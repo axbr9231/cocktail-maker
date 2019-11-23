@@ -51,7 +51,8 @@ class App extends React.Component {
       searched: true,
       searchData: newDrink.drinks[0],
       searchIngredients: this.searchIngredients,
-      searchUnits: this.searchUnits
+      searchUnits: this.searchUnits,
+      term: ''
     });
   }
 
@@ -63,7 +64,6 @@ class App extends React.Component {
   }
 
   render () {
-    console.log(this.state.searched)
     if (this.state.searched === false) {
       return (
         <div className="App">
@@ -71,6 +71,15 @@ class App extends React.Component {
             <nav class="navbar navbar-inverse">
               <div class="container-fluid">
               <div class="navbar-header">
+              <iframe 
+                title="nipponHorn"
+                width="50%"
+                height="69" 
+                scrolling="no" 
+                frameborder="no" 
+                allow="autoplay" 
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303832426&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"
+           ></iframe>
               </div>
               <form class="form-inline my-2 my-lg-0">
               <button 
@@ -78,7 +87,6 @@ class App extends React.Component {
               >Home</button>
                 <input 
                 class="form-control mr-sm-2" 
-    
                 placeholder="Search" 
                 aria-label="Search"
                 value={this.state.term}
@@ -121,6 +129,15 @@ class App extends React.Component {
             <nav class="navbar navbar-inverse">
               <div class="container-fluid">
               <div class="navbar-header">
+              <iframe 
+                title="nipponHorn"
+                width="100%"
+                height="70" 
+                scrolling="no" 
+                frameborder="no" 
+                allow="autoplay" 
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303832426&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"
+           ></iframe>
               </div>
               <form class="form-inline my-2 my-lg-0">
               <button 
