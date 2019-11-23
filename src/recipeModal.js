@@ -1,5 +1,7 @@
 import React from 'react';
 function Recipe(props) {
+    console.log(props.ingredients)
+    let ingredients = ['shit', 'ass']
     return (
         <div>
         <div class="modal fade" id="recipeModal" tabIndex="-1" role="dialog" aria-labelledby="recipeModalLabel" aria-hidden="true">
@@ -12,7 +14,14 @@ function Recipe(props) {
                   </button>
                 </div>
                 <div class="modal-body">
-                  ...
+                    <div class="container">
+                        <ul className="ingredients">
+                    {props.ingredients.map((data, i) => {
+                        console.log(data);
+                        return (<li key={i}>{data}</li>)
+                    })}
+                    </ul>
+                    </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

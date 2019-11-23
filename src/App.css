@@ -29,3 +29,16 @@ body {
   color: whitesmoke
 }
 
+.modal-body {
+  background-image: url('./2Tadxm.jpg');
+  color: white;
+}
+
+.modal-footer {
+  background-image: url('./2Tadxm.jpg');
+  border: none;
+}
+
+.ingredients {
+  text-align: left;
+}
