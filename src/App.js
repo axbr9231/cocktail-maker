@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import $ from 'jquery';
 import Drink from './Drink.js';
+import drinks from './drinksList';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,6 +10,11 @@ class App extends React.Component {
     this.state = {
       drinks: []
     };
+  }
+  componentDidMount() {
+    this.setState({
+      drinks: drinks
+    })
   }
 
   render () {

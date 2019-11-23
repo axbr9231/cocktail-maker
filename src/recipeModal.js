@@ -15,9 +15,9 @@ function Recipe(props) {
                 <div class="modal-body">
                     <div class="container">
                         <ul className="ingredients">
-                    {props.ingredients.map((data, i) => {
+                        {props.ingredients.map((data, i) => {
                         console.log(data);
-                        return (<li key={i}>{data}</li>)
+                        return (<li key={i}>{props.units[i]} {data}</li>)
                     })}
                     </ul>
                     <p>{props.drinkData.strInstructions}</p>
