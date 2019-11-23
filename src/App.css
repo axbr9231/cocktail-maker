@@ -23,6 +23,7 @@ body {
 .card {
   width: 18rem;
   background: black;
+  margin: 25px;
 }
 
 .card-body {

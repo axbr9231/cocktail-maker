@@ -33,7 +33,15 @@ class App extends React.Component {
       </header>
       <div class="container-fluid">
         <div class="row ml-2 mt-5">
-          <Drink class="col-2"/>
+          {this.state.drinks.map((drink, i) => {
+            return (
+            <Drink 
+            drinkData={drink}
+            key={i}
+            index={i}
+            class="col-md-3"
+            />)
+          })}
         </div>
       </div>
     </div>

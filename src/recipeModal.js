@@ -1,13 +1,24 @@
 import React from 'react';
-function Recipe(props) {
-    console.log(props.ingredients)
+
+class Recipe extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    // componentWillReceiveProps(nextProps) {
+    //   if (this.props !== nextProps) {
+    //     this.props = nextProps
+    //   }
+    // }
+
+    render() {
+      console.log('props', this.props)
     return (
         <div>
-        <div class="modal fade" id="recipeModal" tabIndex="-1" role="dialog" aria-labelledby="recipeModalLabel" aria-hidden="true">
+        <div class="modal fade" id={`recipeModal${this.props.index}`} tabIndex="-1" role="dialog" aria-labelledby="recipeModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="recpieModalLabel">{props.drinkData.strDrink}</h5>
+                  <h5 class="modal-title" id="recpieModalLabel">{this.props.drinkData.strDrink}</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -15,12 +26,12 @@ function Recipe(props) {
                 <div class="modal-body">
                     <div class="container">
                         <ul className="ingredients">
-                        {props.ingredients.map((data, i) => {
+                        {this.props.ingredients.map((data, i) => {
                         console.log(data);
-                        return (<li key={i}>{props.units[i]} {data}</li>)
+                        return (<li key={i}>{this.props.units[i]} {data}</li>)
                     })}
                     </ul>
-                    <p>{props.drinkData.strInstructions}</p>
+                    <p>{this.props.drinkData.strInstructions}</p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -31,6 +42,7 @@ function Recipe(props) {
           </div>
         </div>
     )
+    }
 }
 
 export default Recipe;
