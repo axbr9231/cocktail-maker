@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      drinks: ''
+      drinks: []
     };
   }
 
@@ -26,7 +26,9 @@ class App extends React.Component {
       </nav>
       </header>
       <div class="container-fluid">
-      <Drink />
+        <div class="row ml-2">
+          <Drink class="col-2"/>
+        </div>
       </div>
     </div>
   );
