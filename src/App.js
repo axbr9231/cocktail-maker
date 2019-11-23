@@ -28,7 +28,6 @@ class App extends React.Component {
   }
 
   handleSearch(e) {
-    //e.preventDefault()
     this.setState({
       term: e.target.value
     })
@@ -59,8 +58,12 @@ class App extends React.Component {
   homePage(e) {
     e.preventDefault();
     this.setState({
-      searched: false
+      searched: false,
+      searchIngredients: [],
+      searchUnits: []
     })
+    this.searchIngredients = [];
+    this.searchUnits = [];
   }
 
   render () {
