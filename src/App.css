@@ -42,3 +42,8 @@ body {
 .ingredients {
   text-align: left;
 }
+
+.navbar {
+  background-image: url('./2Tadxm.jpg');
+  border-bottom: solid black 3px;
+}

@@ -26,7 +26,7 @@ class App extends React.Component {
       </nav>
       </header>
       <div class="container-fluid">
-        <div class="row ml-2">
+        <div class="row ml-2 mt-5">
           <Drink class="col-2"/>
         </div>
       </div>
