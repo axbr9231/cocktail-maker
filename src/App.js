@@ -36,6 +36,9 @@ class App extends React.Component {
   async submitSearch(e) {
     e.preventDefault()
     let newDrink = await $.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${this.state.term}`);
+    if (newDrink.drinks === null) {
+      alert('Sorry that drink does not exist');
+    } else {
     for (let key in newDrink.drinks[0]) {
       if (key.includes('strIngredient') && newDrink.drinks[0][key] !== null) {
         this.searchIngredients.push(newDrink.drinks[0][key]);
@@ -53,6 +56,7 @@ class App extends React.Component {
       searchUnits: this.searchUnits,
       term: ''
     });
+  }
   }
 
   homePage(e) {
