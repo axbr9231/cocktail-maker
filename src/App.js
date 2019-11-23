@@ -84,7 +84,7 @@ class App extends React.Component {
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303832426&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"
            ></iframe>
               </div>
-              <form class="form-inline my-2 my-lg-0">
+              <form class="form-inline my-2 my-lg-0" onSubmit={(e) => {this.submitSearch(e)}}>
               <button 
               class="btn btn-danger navbar-btn mr-4"
               >Home</button>
