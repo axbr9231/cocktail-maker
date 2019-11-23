@@ -48,3 +48,13 @@ body {
   background-image: url('./2Tadxm.jpg');
   border-bottom: solid black 3px;
 }
+
+#searchCard {
+  width: 1000px;
+  margin-left: 200px;
+  margin-top: 150px;
+}
+
+.modal-header {
+  background-color: blanchedalmond;
+}

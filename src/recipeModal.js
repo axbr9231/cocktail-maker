@@ -4,14 +4,8 @@ class Recipe extends React.Component {
     constructor(props) {
       super(props);
     }
-    // componentWillReceiveProps(nextProps) {
-    //   if (this.props !== nextProps) {
-    //     this.props = nextProps
-    //   }
-    // }
 
     render() {
-      console.log('props', this.props)
     return (
         <div>
         <div class="modal fade" id={`recipeModal${this.props.index}`} tabIndex="-1" role="dialog" aria-labelledby="recipeModalLabel" aria-hidden="true">
@@ -27,7 +21,6 @@ class Recipe extends React.Component {
                     <div class="container">
                         <ul className="ingredients">
                         {this.props.ingredients.map((data, i) => {
-                        console.log(data);
                         return (<li key={i}>{this.props.units[i]} {data}</li>)
                     })}
                     </ul>
