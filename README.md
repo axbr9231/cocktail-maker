@@ -5,6 +5,8 @@
 
 Get the recipe for 8 of the most popular cocktails out there or search for your favorite one in the search bar. The app plays a chill lounge song on page load through Sound Cloud, to turn this feature off, simply click the pause button in the top left corner. 
 
+<img src="users/axelbrostedt/desktop/appPic.png" alt="My app"/>
+
 ## Available Scripts
 
 In the project directory, you can run:
